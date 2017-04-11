@@ -9,6 +9,7 @@ class AccessController < ApplicationController
   # Display menu items.
   # ***********************************************************************
   def menu
+    @committees = Committee.order(:id)
   end
 
   # ***********************************************************************
